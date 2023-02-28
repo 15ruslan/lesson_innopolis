@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -13,11 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <script async src="../js/popup.js">
     </script>
+    <script defer src="../js/burger.js">
+    </script>
     <title>Контакты</title>
+    <link rel="icon" href="../images/logo.svg" type="image/x-icon">
 </head>
 <body>
-    <div class="div_header">
-        <img alt="logo" src="../images/logo.svg">
+    <header class="div_header open">
+        <a href="../index.html"><img alt="logo" src="../images/logo.svg"></a>
+        <button class="button_burger" id="burger">
+            <span class="span_burger"></span>
+            <span class="span_burger"></span>
+            <span class="span_burger"></span>
+        </button>
         <ul class="menu">
             <li>
                 <a class="menu_link" href="../index.html">
@@ -46,16 +54,30 @@
                 Войти на сайт
             </p>
             <form class="form_popup">
-                <input type="username" placeholder="Логин" class="form_login" required>
+                <input type="email" placeholder="Логин" class="form_login" required>
                 <input type="password" placeholder="Пароль" class="form_login" required>
                 <button type="submit" class="button_popup">Войти</button>
             </form>
         </div>
-    </div>
+    </header>
     <div class="content">
         <h3 class="for_h3">
             Как нас найти 🗺️️
         </h3>
+    </div>
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada0288235f3cc187b2dcc6b2f2574ac35540771663297cda9f4ef54383042cf2&amp;source=constructor" 
+        width="1000" height="400"></iframe>
+        
+    <div class="content">   
+        <p class="contacts">
+            Наши контакты
+        </p>
+        <p class="contacts_adress">
+            Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000
+        </p>
+        <p class="contacts_phone">
+            Тел: +7 (812) 555-55-55
+        </p>
     </div>
     <div class="for_footer1">
         <p class="for_footer2">

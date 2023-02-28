@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -13,11 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <script async src="./js/popup.js">
     </script>
+    <script defer src="./js/burger.js">
+    </script>
     <title>Главная</title>
+    <link rel="icon" href="./images/logo.svg" type="image/x-icon">
 </head>
 <body>
-    <div class="div_header">
-        <img alt="logo" src="./images/logo.svg">
+    <header class="div_header open">
+        <a href="#"><img alt="logo" src="./images/logo.svg"></a>
+        <button class="button_burger" id="burger">
+            <span class="span_burger"></span>
+            <span class="span_burger"></span>
+            <span class="span_burger"></span>
+        </button>
         <ul class="menu">
             <li>
                 <a class="menu_link" href="#">
@@ -41,17 +49,19 @@
             </li>
         </ul>
         <a class="login_button" href="#">Войти</a>
-        <div class="login_popup">
-            <p class="head_popup">
-                Войти на сайт
-            </p>
-            <form class="form_popup">
-                <input type="username" placeholder="Логин" class="form_login" required>
-                <input type="password" placeholder="Пароль" class="form_login" required>
-                <button type="submit" class="button_popup">Войти</button>
-            </form>
-        </div>
-    </div>
+        
+            <div class="login_popup">
+                <p class="head_popup">
+                    Войти на сайт
+                </p>
+                <form class="form_popup">
+                    <input type="email" placeholder="Логин" class="form_login" required>
+                    <input type="password" placeholder="Пароль" class="form_login" required>
+                    <button type="submit" class="button_popup">Войти</button>
+                </form>
+            </div>
+        
+    </header>
     <div class="content">
         <h3 class="for_h3">
             Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!

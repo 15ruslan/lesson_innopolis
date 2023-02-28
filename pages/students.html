@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -13,11 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <script async src="../js/popup.js">
     </script>
+    <script defer src="../js/burger.js">
+    </script>
     <title>Студенты</title>
+    <link rel="icon" href="../images/logo.svg" type="image/x-icon">
 </head>
 <body>
-    <div class="div_header">
-        <img alt="logo" src="../images/logo.svg">
+    <header class="div_header open">
+        <a href="../index.html"><img alt="logo" src="../images/logo.svg"></a>
+        <button class="button_burger" id="burger">
+            <span class="span_burger"></span>
+            <span class="span_burger"></span>
+            <span class="span_burger"></span>
+        </button>
         <ul class="menu">
             <li>
                 <a class="menu_link" href="../index.html">
@@ -46,17 +54,69 @@
                 Войти на сайт
             </p>
             <form class="form_popup">
-                <input type="username" placeholder="Логин" class="form_login" required>
+                <input type="email" placeholder="Логин" class="form_login" required>
                 <input type="password" placeholder="Пароль" class="form_login" required>
                 <button type="submit" class="button_popup">Войти</button>
             </form>
         </div>
-    </div>
+    </header>
     <div class="content">
         <h3 class="for_h3">
             Студенты потока 08.02.2020 👧👦
         </h3>
-    </div>
+        <div class="students">
+            <section class="student">
+                <a href="./me.html">
+                    <img alt="me_img" src="../images/me.jpg" class="student_img">
+                </a>
+                <h6 class="student_name">
+                    <a href="./me.html" class="student_name_link">
+                        Руслан Лепехин
+                    </a>
+                </h6>
+            </section>
+            <section class="student">
+                <a href="./plug.html">
+                    <img alt="student_img" src="../images/student.svg" class="student_img">
+                </a>
+                <h6 class="student_name">
+                    <a href="./plug.html" class="student_name_link">
+                        Мария Александровна
+                    </a>
+                </h6>
+            </section>
+            <section class="student">
+                <a href="./plug.html">
+                    <img alt="student_img" src="../images/student.svg" class="student_img">
+                </a>
+                <h6 class="student_name">
+                    <a href="./plug.html" class="student_name_link">
+                        Мария Александровна
+                    </a>
+                </h6>
+            </section>
+            <section class="student">
+                <a href="./plug.html">
+                    <img alt="student_img" src="../images/student.svg" class="student_img">
+                </a>
+                <h6 class="student_name">
+                    <a href="./plug.html" class="student_name_link">
+                        Василий Иванов
+                    </a>
+                </h6>
+            </section>
+            <section class="student">
+                <a href="./plug.html">
+                    <img alt="student_img" src="../images/student.svg" class="student_img">
+                </a>
+                <h6 class="student_name">
+                    <a href="./plug.html" class="student_name_link">
+                        Василий Иванов
+                    </a>
+                </h6>
+            </section>
+        </div>
+    </div>    
     <div class="for_footer1">
         <p class="for_footer2">
             2022 &copy; <a class="for_footer3" href="https://innopolis.university/">учебный центр</a>
